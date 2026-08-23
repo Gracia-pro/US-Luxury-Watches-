@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Your Cart | Luxury Watches USA</title>
+        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        
+        <div class="topbar">
+        <span>New York Diamond District</span>
+        <span>Secure order requests</span>
+        <a href="https://wa.me/+17072007902">WhatsApp us +1 (707) 200-7902</a>
+        <a href="mailto:Luxurywatch310543@gmail.com">Email us</a>
+    </div>
+
+    <header class="site-header">
+        <button class="icon-btn menu-toggle" aria-label="Open menu">☰</button>
+        <a class="logo" href="index.html">
+            <span>LUXURY</span><strong>WATCHES USA</strong>
+        </a>
+
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Watches</a>
+            <a href="live-inventory.html">Live Inventory</a>
+            <a href="sell.html">Sell or Trade</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="header-actions">
+            <a class="whatsapp-link" href="https://wa.me/+17072007902">WhatsApp</a>
+            <a class="cart-link" href="cart.html">Cart <span class="cart-count">0</span></a>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <p class="eyebrow">Your selection</p>
+            <h1>Ready when<br><em>you are.</em></h1>
+            <p>Send an order request and a specialist will confirm availability, shipping, and payment options.</p>
+        </section>
+        <section class="form-section">
+            <div id="cart-items"></div>
+            <p id="cart-total" class="price"></p>
+            <form id="order-form" class="form-grid" hidden>
+                <div class="form-field">
+                    <label>Your name</label>
+                    <input name="customer_name" required>
+                </div>
+                <div class="form-field">
+                    <label>Email address</label>
+                    <input name="customer_email" type="email" required>
+                </div>
+                <div class="form-field full">
+                    <button class="button button-gold" type="submit">Request this order <span>↗</span></button>
+                </div>
+            </form>
+            <p id="cart-message" class="notice" hidden></p>
+            <a class="button button-outline" href="shop.html">Continue shopping <span>↗</span></a>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
